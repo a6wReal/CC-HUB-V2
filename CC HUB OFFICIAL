@@ -1,0 +1,793 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "CCHUBV2", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+--[[
+Name = <string> - The name of the UI.
+HidePremium = <bool> - Whether or not the user details shows Premium status or not.
+SaveConfig = <bool> - Toggles the config saving in the UI.
+ConfigFolder = <string> - The name of the folder where the configs are saved.
+IntroEnabled = <bool> - Whether or not to show the intro animation.
+IntroText = <string> - Text to show in the intro animation.
+IntroIcon = <string> - URL to the image you want to use in the intro animation.
+Icon = <string> - URL to the image you want displayed on the window.
+CloseCallback = <function> - Function to execute when the window is closed.
+]]
+local NewTab = Window:MakeTab({
+	Name = "Da Hood",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+local MainTab = Window:MakeTab({
+	Name = "Blox Fruits",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+OrionLib:MakeNotification({
+	Name = "Thank You For Using CCHUB!",
+	Content = "Made By A6W Bitch ass Nigga",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+--[[
+Title = <string> - The title of the notification.
+Content = <string> - The content of the notification.
+Image = <string> - The icon of the notification.
+Time = <number> - The duration of the notfication.
+]]
+
+MainTab:AddButton({
+	Name = "RedZ Hub",
+	Callback = function()
+      		print("Executed!")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BloxFruits/main/redz9999"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+NewTab:AddButton({
+	Name = "SwagMode",
+	Callback = function()
+      		print("Executed")
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
+  	end    
+    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+MainTab:AddButton({
+	Name = "Cokka Hub",
+	Callback = function()
+      		print("Executed")
+            loadstring(game:HttpGet"https://raw.githubusercontent.com/UserDevEthical/Loadstring/main/CokkaHub.lua")()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local ThirdTab = Window:MakeTab({
+	Name = "Arsenal",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+ThirdTab:AddButton({
+	Name = "Tbao Hub",
+	Callback = function()
+      		print("Executed!")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubArsenal"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+NewTab:AddButton({
+	Name = "azure modded",
+	Callback = function()
+      		print("Executed!")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Actyrn/Scripts/main/AzureModded"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+NewTab:AddButton({
+	Name = "nyula",
+	Callback = function()
+      		print("Executed!")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/nyulachan/nyula/main/nyulauh"))();
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local rivalsTab = Window:MakeTab({
+	Name = "Rivals",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+rivalsTab:AddButton({
+	Name = "Rival GUI",
+	Callback = function()
+      		print("Executed")
+            local scriptURL = 'https://raw.githubusercontent.com/Sheeshablee73/Scriptss/main/RivalsUPD2.lua'
+local response = game:HttpGet(scriptURL)
+local executeScript = loadstring(response)
+executeScript()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+rivalsTab:AddButton({
+	Name = "Tbao Hub",
+	Callback = function()
+      		print("Executed")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubRivals"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local kingTab = Window:MakeTab({
+	Name = "King Legacy",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+kingTab:AddButton({
+	Name = "King Legacy Script 1",
+	Callback = function()
+      		print("nigga")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/ChopLoris/ArcHub/main/main.lua"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+kingTab:AddButton({
+	Name = "king legacy v2 GUI",
+	Callback = function()
+      		print("nigga script")
+            loadstring(game:HttpGet('https://btteam.net/scripts-auth/', true))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local M2Tab = Window:MakeTab({
+	Name = "MM2",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+M2Tab:AddButton({
+	Name = "OP GUI",
+	Callback = function()
+      		print("a6w")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Doggo-cryto/EclipseMM2/master/Script", true))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+MainTab:AddButton({
+	Name = "Annie Hub",
+	Callback = function()
+      		print("exrcuted")
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/1st-Mars/Annie/main/1st.lua'))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+M2Tab:AddButton({
+	Name = "MEOW HUB",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/PomidorkaExlaL/MeoWHubMW/main/share'))();
+            
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+ThirdTab:AddButton({
+	Name = "Reaper Hub",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/AyoReaper/Reaper-Hub/main/loader.lua"))()
+            
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local BladeTab = Window:MakeTab({
+	Name = "blade ball",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+BladeTab:AddButton({
+	Name = "Blade ball GUI",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet(('https://raw.githubusercontent.com/malicious-dev/RobloxScripting/main/bladeball.lua'),true))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local raceTab = Window:MakeTab({
+	Name = "Animal Race",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+raceTab:AddButton({
+	Name = "Animal Race GUI",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/liebertsx/collection/main/script/non.lua",true))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local strongmanTab = Window:MakeTab({
+	Name= "strongman simulator",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+strongmanTab:AddButton({
+	Name = "strongman GUI",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/ProjectLightningDev/Project-Lightning-Loader/main/Loader.Lua"))() 
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local legendTab = Window:MakeTab({
+	Name = "⚡️Legends Of Speed",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+legendTab:AddButton({
+	Name = "Legends of Speed GUI",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet("https://pastebin.com/raw/mqGPg69N"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+MainTab:AddButton({
+	Name = "HOHO Hub",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
+  	end    
+})
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+launchTab = Window:MakeTab({
+	Name = "launch into space simulator",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+launchTab:AddButton({
+	Name = "launch into space simulator GUI",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraScript/Script/main/LaunchInto"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+NewTab:AddButton({
+	Name = "Tbo Hub",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/cool5013/TBO/main/TBOscript'))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local warTab = Window:MakeTab({
+	Name = "BedWars",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+warTab:AddButton({
+	Name = "VapeV4",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+warTab:AddButton({
+	Name = "Slave dash",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/SlaveDash/Crokuranu/main/Bedwars%20UI%20Source%20Code'))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+MainTab:AddButton({
+	Name = "Speed X Hub",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+MainTab:AddButton({
+	Name = "Domadic Hub",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Domadicoof/Domadicoof/main/Domadichub/NottoGay/Start.ranscript"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local sbTab = Window:MakeTab({
+	Name = "The Strongest Battleground",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+sbTab:AddButton({
+	Name = "BadWare Hub",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/sandwichk/RobloxScripts/main/Scripts/BadWare/Hub/Load.lua", true))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+BladeTab:AddButton({
+	Name = "FFJ HUB V3",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/BladeBallV3.lua"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+AquaTab = Window:MakeTab({
+	Name = "Aqua racer",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+AquaTab:AddButton({
+	Name = "Aqua racer GUI",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraScript/Script/main/AquaRacer", true))() 
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+BladeTab:AddButton({
+	Name = "zeuise Hub",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet(('https://raw.githubusercontent.com/zeuise0002/SSSWWW222/main/README.md'),true))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+kingTab:AddButton({
+	Name = "Adel Hub",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/AdelOnTheTop/Adel-Hub/main/Main.lua"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local FleeTab = Window:MakeTab({
+	Name = "Flee The Facility",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+FleeTab:AddButton({
+	Name = "Drifty Hub",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Drifty96/ftfgui/main/ftfgui", true))()
+  	end    
+})
+
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local PetTab = Window:MakeTab({
+	Name = "Pet Sim 99",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+PetTab:AddButton({
+	Name = "WD HUB",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Tests/main/wd_Arise/loader.lua"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+local RaceTab = Window:MakeTab({
+	Name = "Race Clicker",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+RaceTab:AddButton({
+	Name = "INF WINS",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet(('https://raw.githubusercontent.com/MrPectable/MrPectableSource/main/v1.lua')))() 
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
+local AimTab = Window:MakeTab({
+	Name = "CamLock",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+AimTab:AddButton({
+	Name = "Vascal Camlock",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Gwaporoblox/VascalLock/main/README.md"))()
+  	end    
+})
+
+AimTab:AddButton({
+	Name = "Silent Aim + CamLock GUI",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet("https://rentry.co/chr674si/raw/"))()
+  	end    
+})
+
+AimTab:AddButton({
+	Name = "Nossa Lock",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Nosssa/NossLock/main/WinterTime"))()
+
+            
+  	end    
+})
+
+local localTab = Window:MakeTab({
+	Name = "SELF•CHARACTER",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+localTab:AddButton({
+	Name = "Speed Tool",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet("https://pastebin.com/raw/78q8tMk9", true))()
+            
+  	end    
+})
+
+localTab:AddButton({
+	Name = "High Jump",
+	Callback = function()
+      		print("button pressed")
+            game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+  	end    
+})
+
+BladeTab:AddButton({
+	Name = "RedZ HUB",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/REDzHUB/BladeBall/main/eng"))() 
+  	end    
+})
+
+NewTab:AddButton({
+	Name = "Blazed Hub",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/angxlzz/Blazed/main/free'))()
+  	end    
+})
+
+warTab:AddButton({
+	Name = "Vape Void Ware(OP)",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/vapevoidware/main/NewMainScript.lua", true))()
+  	end    
+})
+
+AquaTab:AddButton({
+	Name = "Tora Hub",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraScript/Script/main/AquaRacer", true))() 
+  	end    
+})
+
+launchTab:AddButton({
+	Name = "OP GUI launch IntoSpace",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Sidhsksjsjsh/launch-into-space-simulator/main/.lua"))()
+  	end    
+})
+
+RaceTab:AddButton({
+	Name = "Perfectus Hub",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/PerfectusMim/Perfectus-Hub/main/perfectus-hub"))()
+  	end    
+})
+
+legendTab:AddButton({
+	Name = "OP GUI ",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet('https://nto.darkdevs.pro/uploads/4ce91e2e82ac4eacb089afbb568afc1a.lua',true))()
+  	end    
+})
+
+BladeTab:AddButton({
+	Name = "Reaper Hub",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/AyoReaper/Reaper-Hub/main/loader.lua"))()
+            
+  	end    
+})
+
+strongmanTab:AddButton({
+	Name = "OP SCRIPT GUI",
+	Callback = function()
+      		print("button pressed")
+            loadstring(game:HttpGet"https://raw.githubusercontent.com/itzRolf/Utilities/main/Strongman%20Simulator/main.lua")()
+  	end    
+})
